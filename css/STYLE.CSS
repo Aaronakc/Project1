@@ -1,0 +1,353 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+
+}
+
+/* navigation bar */
+nav{
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 10px;
+  /* opacity: 0.3; */
+ }
+
+ nav{
+  position: relative;
+
+ }
+
+ .logo{
+  color: white;
+  padding: 0 20px 0 20px;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-family: bold;
+ }
+
+ /* list styling */
+
+ nav ul{
+  display: flex;
+  width: 60vw;
+  font-size: 20px;
+  justify-content: space-evenly;
+ }
+
+ nav ul li a{
+  color: white;
+ }
+
+ nav ul li:hover{
+  background-color: palevioletred;
+ }
+
+
+/* home section */
+.home{
+  display: flex;
+  flex-direction:column;
+  padding: 3px 200px;
+  justify-content: center ;
+  align-items: center;
+  background-image: url("https://img.goodfon.com/original/1024x768/2/86/fastfud-burger-gamburger-pepsi-kola-kartofel-fri.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-position: bottom; */
+  /* object-fit: cover; */
+ height: 150vh;
+ position: relative;
+}
+
+.heading{
+  color: yellow;
+  position: absolute;
+  top: 40px;
+  left: 30px;
+  font-size: 40px;
+}
+
+.p1{
+  position: absolute;
+  top: 90px;
+  left: 33px;
+  color: white;
+}
+
+.button1{
+  position: absolute;
+  top: 180px;
+  left:180px;
+  background-color: orange;
+  border-radius: 20px;
+  padding: 10px 25px;
+  border-width: 50%;
+  border: none;
+  font-size: 20px;
+  transition: 0.15s;
+}
+
+.button1:hover{
+  color: white;
+  border: 2px solid white;
+}
+
+.button1:active{
+  background-color: green;
+  color: white;
+}
+/* div to fit image */
+.pizzadiv{
+  width: 370px;
+  height: 370px;
+  position:absolute;
+  top: 0;
+  left:50%;
+}
+
+/* fitting image */
+.pizza{
+  width: 100%;
+  height: 100%;
+  border-radius: 60%;
+  opacity: 0.9;
+  animation-name: rotat;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+
+}
+
+/* animation */
+@keyframes rotat{
+0%{
+  transform: rotate(0deg);
+}
+100%{
+  transform: rotate(360deg);
+}
+}
+
+/* services section */
+
+/* heading */
+.headingservice{
+  text-align: center;
+  font-size: 40px;
+  padding: 50px 0;
+}
+/* paragraphs */
+
+/* servicediv */
+.servicediv{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+
+/* home delivery */
+.homedelivery{
+  width: 250px;
+  height: auto;
+  border: 2px solid brown;
+  text-align: center;
+  padding: 10px 10px;
+  transition: 0.5s;
+}
+
+.deliveryimg{
+  width: 100%;
+  height: 100%;
+  
+}
+.sp1,.sp2,.sp3{
+  word-spacing: justify;
+
+}
+
+/* combo deals div*/
+.foodcombo,.bulkyorder{
+  width: 250px;
+  height: auto;
+  border: 2px solid brown;
+  text-align: center;
+  padding: 10px 10px;
+  transition: 0.5s;
+
+}
+
+.foodcomboimg,.bulkydeliveryimg{
+  width: 100%;
+  height: 100%;
+  
+}
+
+.foodh1,.comboh1,.bulkyh1{
+  text-align: center;
+}
+
+.homedelivery:hover,.foodcombo:hover,.bulkyorder:hover{
+  box-shadow: 0px 0px 10px 2px brown;
+  cursor: pointer;
+}
+
+/* client section */
+.clientheading{
+  text-align: center;
+  font-size: 40px;
+  padding: 50px 0;
+  
+}
+.our-client{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: center;
+}
+
+.client1{
+  grid-area: 1/1/2/2;
+  width: 200px;
+}
+.client2{
+  grid-area: 1/2/2/3;
+  width:200px;
+}
+.client3{
+grid-area: 1/3/2/4;
+width:200px;
+}
+.client4{
+grid-area: 1/4/2/5;
+width: 200px;
+}
+.apple,.viber,.microsoft,.google{
+  width: 100%;
+  border-radius: 50%;
+}
+
+/* form section */
+ .headingcontact{ 
+  text-align: center;
+  font-size: 40px;
+  padding: 50px 0 20px 0;
+}
+
+.contact{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: black;
+  color: white;
+
+}
+.address-section,.email-section,.phone-section{
+  display: flex;
+}
+.addressicon,.email-icon,.phone-icon{
+  width: 40px;
+}
+
+.contactpara{
+  word-spacing: justify;
+  align-items: center;
+  margin: 0 0 20px 0;
+}
+
+.info-grid{
+  display: grid;
+  grid-template-columns: 20vw 20vw 20vw;
+  justify-content: space-evenly;
+  margin: 40px 0;
+}
+
+.address-section{
+grid-area: 1/1/2/2;
+}
+.email-section{
+  grid-area:1/2/2/3;
+
+}
+.phone-section{
+  grid-area:1/3/2/4 ;
+}
+
+.homeicon,.callicon,.mailicon{
+  width: 100%;
+  border-radius: 50%;
+
+}
+
+.form-div{
+  background-image: url("../image/formbackground.png");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80vw;
+  transition: 0.5s;
+  border: 5px solid black;
+  cursor: pointer;
+ } 
+
+ .form-div:hover{
+  box-shadow: 0 0 10px 2px white;
+ }
+.form-div input,.form-div textarea{
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 9px soild black;
+}
+
+.form-div form{
+  width: 40%;
+}
+.form-div label{
+  font-size: 1.3rem;
+  font-weight:bold;
+}
+
+.buttonform{
+  background-color: orange;
+  border: 0.5px solid black;
+  padding: 10px 10px;
+
+}
+  
+
+
+/* footer */
+footer{
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+@media screen and (max-width:700px) {
+  .pizza{
+   width: 100px;
+  height: 100px;
+  position:absolute;
+  display: inline-block;
+  }
+  .heading{
+    font-size: 20px;
+  }
+  .p1{
+    font-size: 5px;
+  }
+}
+
+
+
+
+
+
