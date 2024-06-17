@@ -87,9 +87,10 @@ nav{
 
 .p1{
   position: absolute;
-  top: 90px;
+  top: 100px;
   left: 33px;
   color: white;
+  text-align: center;
 }
 
 .button1{
