@@ -16,6 +16,7 @@
       <li><a href="#home">Home</a></li>
       <!-- <li><a href="#home">About</a></li> -->
       <li><a href="#services">Services</a></li>
+      <li><a href="#menu">Menu</a></li>
       <li><a href="#our-clients">Our Clients</a></li>
       <li><a href="#contact-us">Contact Us</a></li>
       <!-- <li><a href="#contact">Feedback </a></li> -->
@@ -23,7 +24,8 @@
     </ul>
   </nav>
   <!-- home section -->
-  <section class="home">
+  <section class="home" id="home">
+
     <h1 class="heading">Welcome To My Online Meal</h1>
     <p class="p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus tenetur <br>quia iste libero
       asperiores mollitia ipsa minus accusamus doloremque <br>error!</p>
@@ -31,6 +33,8 @@
     <div class="pizzadiv">
       <img src="../image/pizzacircle.jpg" class="pizza">
     </div>
+
+
   </section>
 
   <!-- servives -->
@@ -40,13 +44,14 @@
       <div class="homedelivery">
         <img src="../image/delivery-boy.png" class="deliveryimg">
         <h1 class="foodh1">Food Delivery</h1>
-        <p class="sp1">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Iusto vel error dicta<br> deserunt quos neque?
+        <p class="sp1">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Iusto vel error dicta<br> deserunt
+          quos neque?
         </p>
       </div>
 
       <div class="foodcombo">
         <img src="../image/food-combo.png" class="foodcomboimg">
-        <h1  class="comboh1">Combo Meals</h1>
+        <h1 class="comboh1">Combo Meals</h1>
         <p class="sp2">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Iusto vel error dicta
           <!-- <br> deserunt quos neque? -->
         </p>
@@ -61,50 +66,68 @@
         </p>
       </div>
     </div>
-
   </section>
-
+ <!-- Food Available -->
+ <section class="foods" id="menu">
+  <h1 class="clientheading">MENU<h1>
+    <div class="foods-available">
+    <div class="photos">
+      <span style="--i:1"><img src="../image/piz.jpg" alt="" class="i1"></span>
+      <span style="--i:2"><img src="../image/sandwich.jpg" alt="" class="i1"></span>
+      <span style="--i:3"><img src="../image/biryani.jpg" alt="" class="i1"></span>
+      <span style="--i:4"><img src="../image/hotdog.jpg" alt="" class="i1"></span>
+      <span style="--i:5"><img src="../image/burger.jpg" alt="" class="i1"></span>
+      <span style="--i:6"><img src="../image/chicken-nuggets.jpg" alt="" class="i1"></span>
+      <span style="--i:7"><img src="../image/pasta.jpg" alt="" class="i1"></span>
+      <span style="--i:8"><img src="../image/drumstick.jpg" alt="" class="i1"></span>
+  
+  
+    </div>
+  </div>
+    </section>
   <section class="clients">
     <h1 class="clientheading" id="our-clients">OUR CLIENTS</h1>
     <div class="our-client">
-    <div class="client1">
-      <img src="../image/apple-logo2.png"  class="apple">
-    </div>
+      <div class="client1">
+        <img src="../image/apple-logo2.png" class="apple">
+      </div>
 
-    <div class="client2">
-<img src="../image/viber.png"  class="viber">
-    </div>
+      <div class="client2">
+        <img src="../image/viber.png" class="viber">
+      </div>
 
-    <div class="client3">
-<img src="../image/microsoft.png" class="microsoft" >
-    </div>
+      <div class="client3">
+        <img src="../image/microsoft.png" class="microsoft">
+      </div>
 
-    <div class="client4">
-<img src="../image/google.png" class="google" >
+      <div class="client4">
+        <img src="../image/google.png" class="google">
+      </div>
     </div>
-  </div>
 
   </section>
+
 
   <!-- contact us section -->
 
   <section class="contact" id="contact-us">
     <div class="contactus">
-    <h1 class="headingcontact">CONTACT US
-    </h1>
-    <p class="contactpara">Lorem ipsum dolor sit, amet consectetur adipisicing elit.Dolorem error cupiditate eaque praesentium.</p>
+      <h1 class="headingcontact">CONTACT US
+      </h1>
+      <p class="contactpara">Lorem ipsum dolor sit, amet consectetur adipisicing elit.Dolorem error cupiditate eaque
+        praesentium.</p>
     </div>
 
     <div class="form-div">
       <form>
         <div class="form">
-        <label for="name">First Name</label>
-        <input type="text" id="name" name="name" placeholder="enter your first  name">
-      </div>
+          <label for="name">First Name</label>
+          <input type="text" id="name" name="name" placeholder="enter your first  name">
+        </div>
 
         <div class="form">
-        <label for="last-name">Last Name</label>
-        <input type="text" id="last-name" name="last-name" placeholder="enter your last name">
+          <label for="last-name">Last Name</label>
+          <input type="text" id="last-name" name="last-name" placeholder="enter your last name">
         </div>
 
         <!-- <div class="form">
@@ -118,18 +141,18 @@
           </div> -->
 
         <div class="form">
-        <label for="email">Email</label>
-        <input type="text" id="email" name="email" placeholder="enter your email">
+          <label for="email">Email</label>
+          <input type="text" id="email" name="email" placeholder="enter your email">
         </div>
 
         <div class="form">
           <label for="Phone">Phone Number</label>
           <input type="text" id="Phone" name="Phone" placeholder="enter your Number">
-          </div>
+        </div>
 
         <div class="form">
-        <label for="message">Message</label>
-        <textarea name="message" id="message"  cols="30"  rows="10"></textarea>
+          <label for="message">Message</label>
+          <textarea name="message" id="message" cols="30" rows="10"></textarea>
         </div>
 
         <div class="form">
@@ -137,53 +160,63 @@
         </div>
       </form>
     </div>
- 
+
 
 
 
     <!-- ADREESS SECTION TO PHONE -->
-     <!-- CREATING GRID LATER -->
+    <!-- CREATING GRID LATER -->
     <div class="info-grid">
       <!-- FIRST USING FLEX TO ALIGN IMAGE AND ADRESS AND SO ON -->
-    <div class="address-section">
-      <div class="addressicon">
-        <img src="../image/homeicon.png"  class="homeicon">
+      <div class="address-section">
+        <div class="addressicon">
+          <img src="../image/homeicon.png" class="homeicon">
+        </div>
+        <div class="adress">
+          <h1 class="addressh1">Address</h1>
+          <p class="pa">Lorem, ipsum dolor,<br>
+            Lorem, ipsum,<br>
+            Lorem,</p>
+        </div>
       </div>
-    <div class="adress">
-      <h1 class="addressh1">Address</h1>
-      <p>Lorem, ipsum dolor,<br>
-        Lorem, ipsum,<br>
-        Lorem,</p>
-    </div>
-    </div>
 
 
-    <div class="email-section">
-      <div class="email-icon">
-        <img src="../image/emailicon.png"  class="mailicon">
+      <div class="email-section">
+        <div class="email-icon">
+          <img src="../image/emailicon.png" class="mailicon">
+        </div>
+        <div class="email">
+          <h1 class="emailh1">Email</h1>
+          <p class="pe">Lorem, ipsum dolor,<br>
+            Lorem, ipsum,<br>
+            Lorem,</p>
+        </div>
       </div>
-    <div class="email">
-      <h1 class="emailh1">Email</h1>
-      <p>Lorem, ipsum dolor,<br>
-        Lorem, ipsum,<br>
-        Lorem,</p>
-    </div>
-    </div>
 
-<div class="phone-section">
-      <div class="phone-icon">
-        <img src="../image/phoneicon.png"  class="callicon">
+      <div class="phone-section">
+        <div class="phone-icon">
+          <img src="../image/phoneicon.png" class="callicon">
+        </div>
+        <div class="Phone">
+          <h1 class="Phoneh1">Phone</h1>
+          <p class="pp">Lorem, ipsum dolor.</p>
+        </div>
       </div>
-    <div class="Phone">
-      <h1 class="Phoneh1">Phone</h1>
-      <p>Lorem, ipsum dolor.</p>
     </div>
+
     </div>
-</div>
 
-  </div>
+    
+      <!-- map -->
+      <div class="divmap">
+      <h1>LOCATION</h1>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28271.346782114724!2d85.32312825039264!3d27.657997848387343!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb114b1a204431%3A0x7c0ecc6107be0d5f!2sImadol!5e0!3m2!1sen!2snp!4v1718644684759!5m2!1sen!2snp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div> 
+  </section>
 
-  <!-- form section -->
+
+
+    <!-- form section -->
     <!-- <div class="form-div">
       <form action="">
         <div class="form">
@@ -228,11 +261,11 @@
     </div>
   </section> -->
 
-  <footer>
-    <div class="center">
-      Copyright &copy; www.myonlinemeal.com. All rights reserved!
-    </div>
-  </footer>
+    <footer>
+      <div class="center">
+        Copyright &copy; www.myonlinemeal.com. All rights reserved!
+      </div>
+    </footer>
 </body>
 
 </html>
