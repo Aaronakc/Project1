@@ -11,7 +11,6 @@
 }
 body{
   width: 100%;
-  
   /* overflow: hidden; */
 }
 /* navigation bar */
@@ -21,6 +20,10 @@ nav{
   align-items: center;
   justify-content: space-between;
   padding: 10px 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
   /* position: fixed;
   top: 0; */
   /* opacity: 0.3; */
@@ -80,24 +83,25 @@ nav{
 .heading{
   color: yellow;
   position: absolute;
-  top: 40px;
+  top: 90px;
   left: 30px;
   font-size: 40px;
 }
 
 .p1{
   position: absolute;
-  top: 100px;
+  top: 150px;
   left: 33px;
   color: white;
   text-align: center;
 }
 
 .button1{
-  position: absolute;
-  top: 180px;
-  left:180px;
-  background-color: orange;
+  position: absolute; 
+  top: 230px;
+  left:140px;
+  background-color: brown;
+  color: white;
   border-radius: 20px;
   padding: 10px 25px;
   border-width: 50%;
@@ -107,13 +111,11 @@ nav{
 }
 
 .button1:hover{
-  color: white;
-  border: 2px solid white;
+  border: 2px solid black;
 }
 
 .button1:active{
   background-color: green;
-  color: white;
 }
 /* div to fit image */
 .pizzadiv{
@@ -122,7 +124,7 @@ nav{
   /* width: 50%;
   height: 200px; */
   position:absolute;
-  top: 0;
+  top: 60px;
   left:50%;
 }
 
@@ -321,7 +323,8 @@ grid-area: 1/1/2/2;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 80vw;
+  /* width: 80vw; */
+  width: 40vw;
   transition: 0.5s;
   border: 5px solid black;
   cursor: pointer;
@@ -333,7 +336,8 @@ grid-area: 1/1/2/2;
  }
 .form-div input,.form-div textarea{
   width: 100%;
-  padding: 0.5rem;
+  /* padding: 0.5rem; */
+  padding: 0.1rem;
   border-radius: 9px soild black;
 }
 
@@ -346,8 +350,8 @@ grid-area: 1/1/2/2;
 }
 
 .buttonform{
-  background-color: orange;
-  border: 0.5px solid blueviolet;
+  background-color: brown;
+  border: 0.5px solid brown;
   color: white;
   padding: 10px 10px;
   margin-top: 10px;
@@ -357,6 +361,7 @@ grid-area: 1/1/2/2;
 .form{
   color:white;
 }
+
   
 /* map */
 iframe{
@@ -368,7 +373,9 @@ iframe{
   font-size: 20px;
   font-family: bold;
   text-align: center;
-}
+} 
+
+
 
 
 /* footer */
@@ -388,6 +395,11 @@ footer{
 
   /* display: inline-block; */
   }
+  nav {
+    width: 99.22%;
+  }
+
+
   .heading{
     font-size: 20px;
     display: block;
@@ -395,14 +407,16 @@ footer{
   .p1,.contactpara,.sp1,.sp2,.sp3{
     font-size: 10px;
     text-align: center;
+  
   }
   .button1{
     position: absolute;
-    top: 25%;
-    left: 5%;
+    top: 190px;
+    left:21%;
+    transform: translateX(-50%);
     font-size: 10px;
     border-radius: 10px;
-    padding-right: 5%; 
+    /* padding-right: 5%;  */
   }
   .logo,.clientheading,.headingservice,.headingcontact{
     font-size: 20px;
@@ -458,8 +472,31 @@ footer{
     padding-left: 5px;
   }
 
+  .form-div input,.form-div textarea{
+    /* width: 100%; */
+    width: 100%;
+    /* padding: 0.5rem; */
+    padding: 0 50px;
+    border-radius: 9px soild black;
+  }
 
-  /* iframe{
+  .form-div label{
+    font-size: 10px;
+    font-weight:bold;
+  }
+
+  .form-div{
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 80vw; */
+    width: 60vw;
+    padding: 20px 20px;
+   } 
+
+
+   /* iframe{ 
     width:50%;
     height:100px;
     padding: 5px 5px;
@@ -468,7 +505,7 @@ footer{
     font-size: 16px;
     font-family: bold;
     text-align: center;
-  }  */
+  }    */
   
 
  
