@@ -1,7 +1,7 @@
-*{
- 
+* {
+
   box-sizing: border-box;
- 
+
   list-style: none;
   text-decoration: none;
   scroll-behavior: smooth;
@@ -9,12 +9,14 @@
   padding: 0;
 
 }
-body{
+
+body {
   width: 100%;
   /* overflow: hidden; */
 }
+
 /* navigation bar */
-nav{
+nav {
   background-color: black;
   display: flex;
   align-items: center;
@@ -27,47 +29,47 @@ nav{
   /* position: fixed;
   top: 0; */
   /* opacity: 0.3; */
- }
+}
 
- nav{
+nav {
   /* position: fixed; */
   left: 0;
   right: 0;
   z-index: 2;
- }
+}
 
- .logo{
+.logo {
   color: white;
   padding: 0 20px 0 20px;
   font-size: 30px;
   font-family: Arial, Helvetica, sans-serif;
   font-family: bold;
- }
+}
 
- /* list styling */
+/* list styling */
 
- nav ul{
+nav ul {
   display: flex;
   width: 60vw;
   font-size: 20px;
   justify-content: space-evenly;
- }
+}
 
- nav ul li a{
+nav ul li a {
   color: white;
- }
+}
 
- nav ul li:hover{
+nav ul li:hover {
   background-color: palevioletred;
- }
+}
 
 
 /* home section */
-.home{
+.home {
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   padding: 3px 200px;
-  justify-content: center ;
+  justify-content: center;
   align-items: center;
   background-image: url("https://img.goodfon.com/original/1024x768/2/86/fastfud-burger-gamburger-pepsi-kola-kartofel-fri.jpg");
   background-repeat: no-repeat;
@@ -75,12 +77,12 @@ nav{
 
   /* background-position: bottom; */
   /* object-fit: cover; */
- height: 150vh;
- width: 100%;
- position: relative;
+  height: 150vh;
+  width: 100%;
+  position: relative;
 }
 
-.heading{
+.heading {
   color: yellow;
   position: absolute;
   top: 90px;
@@ -88,7 +90,7 @@ nav{
   font-size: 40px;
 }
 
-.p1{
+.p1 {
   position: absolute;
   top: 150px;
   left: 33px;
@@ -96,10 +98,10 @@ nav{
   text-align: center;
 }
 
-.button1{
-  position: absolute; 
+.button1 {
+  position: absolute;
   top: 230px;
-  left:140px;
+  left: 140px;
   background-color: brown;
   color: white;
   border-radius: 20px;
@@ -110,26 +112,27 @@ nav{
   transition: 0.15s;
 }
 
-.button1:hover{
+.button1:hover {
   border: 2px solid black;
 }
 
-.button1:active{
+.button1:active {
   background-color: green;
 }
+
 /* div to fit image */
-.pizzadiv{
+.pizzadiv {
   width: 370px;
   height: 370px;
   /* width: 50%;
   height: 200px; */
-  position:absolute;
+  position: absolute;
   top: 60px;
-  left:50%;
+  left: 50%;
 }
 
 /* fitting image */
-.pizza{
+.pizza {
   width: 100%;
   height: 100%;
   border-radius: 60%;
@@ -142,27 +145,29 @@ nav{
 }
 
 /* animation */
-@keyframes rotat{
-0%{
-  transform: rotate(0deg);
-}
-100%{
-  transform: rotate(360deg);
-}
+@keyframes rotat {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /* services section */
 
 /* heading */
-.headingservice{
+.headingservice {
   text-align: center;
   font-size: 40px;
   padding: 50px 0;
 }
+
 /* paragraphs */
 
 /* servicediv */
-.servicediv{
+.servicediv {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -170,7 +175,7 @@ nav{
 
 
 /* home delivery */
-.homedelivery{
+.homedelivery {
   width: 250px;
   height: auto;
   border: 2px solid brown;
@@ -179,18 +184,22 @@ nav{
   transition: 0.5s;
 }
 
-.deliveryimg{
+.deliveryimg {
   width: 100%;
   height: 100%;
-  
+
 }
-.sp1,.sp2,.sp3{
+
+.sp1,
+.sp2,
+.sp3 {
   word-spacing: justify;
 
 }
 
 /* combo deals div*/
-.foodcombo,.bulkyorder{
+.foodcombo,
+.bulkyorder {
   width: 250px;
   height: auto;
   border: 2px solid brown;
@@ -200,63 +209,76 @@ nav{
 
 }
 
-.foodcomboimg,.bulkydeliveryimg{
+.foodcomboimg,
+.bulkydeliveryimg {
   width: 100%;
   height: 100%;
-  
+
 }
 
-.foodh1,.comboh1,.bulkyh1{
+.foodh1,
+.comboh1,
+.bulkyh1 {
   text-align: center;
 }
 
-.homedelivery:hover,.foodcombo:hover,.bulkyorder:hover{
+.homedelivery:hover,
+.foodcombo:hover,
+.bulkyorder:hover {
   box-shadow: 0px 0px 10px 2px brown;
   cursor: pointer;
 }
 
 /* client section */
-.clientheading{
+.clientheading {
   text-align: center;
   font-size: 40px;
   padding: 50px 0;
-  
+
 }
-.our-client{
+
+.our-client {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   align-items: center;
 }
 
-.client1{
+.client1 {
   grid-area: 1/1/2/2;
   width: 200px;
 }
-.client2{
+
+.client2 {
   grid-area: 1/2/2/3;
-  width:200px;
+  width: 200px;
 }
-.client3{
-grid-area: 1/3/2/4;
-width:200px;
+
+.client3 {
+  grid-area: 1/3/2/4;
+  width: 200px;
 }
-.client4{
-grid-area: 1/4/2/5;
-width: 200px;
+
+.client4 {
+  grid-area: 1/4/2/5;
+  width: 200px;
 }
-.apple,.viber,.microsoft,.google{
+
+.apple,
+.viber,
+.microsoft,
+.google {
   width: 100%;
   border-radius: 50%;
 }
 
 /* form section */
- .headingcontact{ 
+.headingcontact {
   text-align: center;
   font-size: 40px;
   padding: 50px 0 20px 0;
 }
 
-.contact{
+.contact {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -265,58 +287,72 @@ width: 200px;
   color: white;
 
 }
-.address-section,.email-section,.phone-section{
+
+.address-section,
+.email-section,
+.phone-section {
   display: flex;
 
 }
-.addressicon,.email-icon,.phone-icon{
+
+.addressicon,
+.email-icon,
+.phone-icon {
   width: 40px;
   padding-left: 5px;
 }
 
-.contactpara{
+.contactpara {
   word-spacing: justify;
   align-items: center;
   margin: 0 0 20px 0;
 }
 
-.info-grid{
+.info-grid {
   display: grid;
   grid-template-columns: 20vw 20vw 20vw;
   justify-content: space-evenly;
   margin: 40px 0;
 }
 
-.address-section{
-grid-area: 1/1/2/2;
-}
-.email-section{
-  grid-area:1/2/2/3;
-
-}
-.phone-section{
-  grid-area:1/3/2/4 ;
+.address-section {
+  grid-area: 1/1/2/2;
 }
 
-.homeicon,.callicon,.mailicon{
+.email-section {
+  grid-area: 1/2/2/3;
+
+}
+
+.phone-section {
+  grid-area: 1/3/2/4;
+}
+
+.homeicon,
+.callicon,
+.mailicon {
   width: 100%;
   border-radius: 50%;
   margin-right: 25px;
 
 }
 
-.addressh1,.emailh1,.Phoneh1{
+.addressh1,
+.emailh1,
+.Phoneh1 {
   font-size: 18px;
   padding-left: 10px;
 }
 
-.pa,.pe,.pp{
+.pa,
+.pe,
+.pp {
   font-size: 16px;
   padding-left: 10px;
 }
 
 /* form */
-.form-div{
+.form-div {
   background-image: url("../image/formbackground.png");
   background-position: center;
   background-size: cover;
@@ -329,27 +365,30 @@ grid-area: 1/1/2/2;
   border: 5px solid black;
   cursor: pointer;
   padding: 20px 20px;
- } 
+}
 
- .form-div:hover{
+.form-div:hover {
   box-shadow: 0 0 10px 2px white;
- }
-.form-div input,.form-div textarea{
+}
+
+.form-div input,
+.form-div textarea {
   width: 100%;
   /* padding: 0.5rem; */
   padding: 0.1rem;
   border-radius: 9px soild black;
 }
 
-.form-div form{
+.form-div form {
   width: 40%;
 }
-.form-div label{
+
+.form-div label {
   font-size: 1.3rem;
-  font-weight:bold;
+  font-weight: bold;
 }
 
-.buttonform{
+.buttonform {
   background-color: brown;
   border: 0.5px solid brown;
   color: white;
@@ -358,103 +397,131 @@ grid-area: 1/1/2/2;
 
 }
 
-.form{
-  color:white;
+.form {
+  color: white;
 }
 
-  
+
 /* map */
-iframe{
-  width:100%;
-  height:150px;
+iframe {
+  width: 100%;
+  height: 150px;
   padding: 10px 10px;
 }
-.divmap h1{
+
+.divmap h1 {
   font-size: 20px;
   font-family: bold;
   text-align: center;
-} 
+}
 
 
 
 
 /* footer */
-footer{
+footer {
   background-color: black;
   color: white;
   text-align: center;
 }
 
 @media screen and (max-width:700px) {
-  .pizza{
-   width: 100px;
-  height: 100px;
-  position:absolute;
-  top: 20%;
-  right: 50%;
+  .pizza {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 20%;
+    right: 50%;
 
-  /* display: inline-block; */
+    /* display: inline-block; */
   }
+
   nav {
     width: 99.22%;
   }
 
 
-  .heading{
+  .heading {
     font-size: 20px;
     display: block;
   }
-  .p1,.contactpara,.sp1,.sp2,.sp3{
+
+  .p1,
+  .contactpara,
+  .sp1,
+  .sp2,
+  .sp3 {
     font-size: 10px;
     text-align: center;
-  
+
   }
-  .button1{
+
+  .button1 {
     position: absolute;
     top: 190px;
-    left:21%;
+    left: 21%;
     transform: translateX(-50%);
     font-size: 10px;
     border-radius: 10px;
     /* padding-right: 5%;  */
   }
-  .logo,.clientheading,.headingservice,.headingcontact{
+
+  .logo,
+  .clientheading,
+  .headingservice,
+  .headingcontact {
     font-size: 20px;
   }
-  nav ul li{
+
+  nav ul li {
     font-size: 10px;
   }
 
-  .servicediv{
+  .servicediv {
     flex-direction: column;
     /* justify-content: space-between; */
-    
+
   }
-  .homedelivery{
+
+  .homedelivery {
     margin-bottom: 10px;
   }
-  .foodcombo,.bulkyorder{
+
+  .foodcombo,
+  .bulkyorder {
     margin-bottom: 10px;
   }
-  .client1,.client2,.client3,.client4{
+
+  .client1,
+  .client2,
+  .client3,
+  .client4 {
     width: 50px;
   }
-  .home{
+
+  .home {
     /* background-size: cover; */
     height: 100vh;
     width: 99.22%;
     /* background-repeat: repeat; */
     background-position: center;
   }
-   .homedelivery,.foodcombo,.bulkyorder{ 
+
+  .homedelivery,
+  .foodcombo,
+  .bulkyorder {
     height: auto;
     width: 150px;
   }
-  .foodh1,.comboh1,.bulkyh1{
+
+  .foodh1,
+  .comboh1,
+  .bulkyh1 {
     font-size: 10px;
   }
-  .pizzadiv{
-    width:100px;
+
+  .pizzadiv {
+    width: 100px;
     height: auto;
     position: absolute;
     /* bottom: 40%; */
@@ -462,17 +529,22 @@ footer{
     left: 80%;
   }
 
-  .addressh1,.emailh1,.Phoneh1{
+  .addressh1,
+  .emailh1,
+  .Phoneh1 {
     font-size: 10px;
     padding-left: 5px;
   }
-  
-  .pa,.pe,.pp{
+
+  .pa,
+  .pe,
+  .pp {
     font-size: 9px;
     padding-left: 5px;
   }
 
-  .form-div input,.form-div textarea{
+  .form-div input,
+  .form-div textarea {
     /* width: 100%; */
     width: 100%;
     /* padding: 0.5rem; */
@@ -480,12 +552,12 @@ footer{
     border-radius: 9px soild black;
   }
 
-  .form-div label{
+  .form-div label {
     font-size: 10px;
-    font-weight:bold;
+    font-weight: bold;
   }
 
-  .form-div{
+  .form-div {
     background-position: center;
     display: flex;
     justify-content: center;
@@ -493,10 +565,10 @@ footer{
     /* width: 80vw; */
     width: 60vw;
     padding: 20px 20px;
-   } 
+  }
 
 
-   /* iframe{ 
+  /* iframe{ 
     width:50%;
     height:100px;
     padding: 5px 5px;
@@ -506,11 +578,7 @@ footer{
     font-family: bold;
     text-align: center;
   }    */
-  
 
- 
+
+
 }
-
-
-
-
