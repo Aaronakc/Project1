@@ -158,7 +158,8 @@ nav ul li:hover {
 /* services section */
 
 /* heading */
-.headingservice,.headingmenu {
+.headingservice,
+.headingmenu {
   text-align: center;
   font-size: 40px;
   padding: 50px 0;
@@ -174,7 +175,7 @@ nav ul li:hover {
 }
 
 
-/* home delivery */
+/* home delivery div */
 .homedelivery {
   width: 250px;
   height: auto;
@@ -272,16 +273,16 @@ nav ul li:hover {
 }
 
 /* menu section */
-.menu{
+.menu {
   padding: 25px 0 25px 0;
   padding: 0 100px 0 100px;
 }
 
-.menurow{
+.menurow {
   display: flex;
 }
 
-.menucolumn{
+.menucolumn {
   box-shadow: 0 0 1px 1px brown;
   border: 1px solid black;
   margin: 10px;
@@ -289,12 +290,12 @@ nav ul li:hover {
   flex: 1;
 }
 
-.menucolumn h2{
-  text-align:center;
+.menucolumn h2 {
+  text-align: center;
   padding: 5px;
 }
 
-.breakfastimg{
+.breakfastimg {
 
   width: 110px;
   height: 110px;
@@ -302,15 +303,15 @@ nav ul li:hover {
   border: 2px solid brown;
 }
 
-.breakfastimg img{
+.breakfastimg img {
   width: 100%;
   height: 100%;
   border-radius: 50%;
   object-fit: cover;
-  
+
 }
 
-.breakfastdiv{
+.breakfastdiv {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -522,7 +523,8 @@ footer {
   .logo,
   .clientheading,
   .headingservice,
-  .headingcontact,.headingmenu {
+  .headingcontact,
+  .headingmenu {
     font-size: 20px;
   }
 
@@ -620,11 +622,11 @@ footer {
     padding: 20px 20px;
   }
 
-  .menurow{
+  .menurow {
     display: flex;
     flex-direction: column;
   }
-  
+
 
 
   /* iframe{ 
