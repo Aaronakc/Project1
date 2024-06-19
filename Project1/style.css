@@ -128,7 +128,8 @@ body {
 }
 .services h1,
 .foods h1,
-.client h1 {
+.client h1,
+.testimonials h1 {
   font-size: 40px;
   text-align: center;
 }
@@ -245,6 +246,28 @@ body {
 .footer {
   margin-top: 30px;
   text-align: center;
+}
+.testimonials {
+  margin: 30px;
+}
+.test {
+  display: flex;
+  background-image: url(./images/testimonial.jpg);
+  /* height: 100px; */
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  /* opacity: 0.2; */
+}
+.rating {
+  color: black;
+  border: none;
+  text-align: center;
+  /* height: 150px; */
+  width: 150px;
+  justify-content: space-between;
+  margin: auto;
 }
 @media screen and (max-width: 700px) {
   /* Styles for screens up to 700px */
