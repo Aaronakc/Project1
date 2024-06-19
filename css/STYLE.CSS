@@ -158,7 +158,7 @@ nav ul li:hover {
 /* services section */
 
 /* heading */
-.headingservice {
+.headingservice,.headingmenu {
   text-align: center;
   font-size: 40px;
   padding: 50px 0;
@@ -270,6 +270,59 @@ nav ul li:hover {
   width: 100%;
   border-radius: 50%;
 }
+
+/* menu section */
+.menu{
+  padding: 25px 0 25px 0;
+  padding: 0 100px 0 100px;
+}
+
+.menurow{
+  display: flex;
+}
+
+.menucolumn{
+  box-shadow: 0 0 1px 1px brown;
+  border: 1px solid black;
+  margin: 10px;
+  padding: 10px;
+  flex: 1;
+}
+
+.menucolumn h2{
+  text-align:center;
+  padding: 5px;
+}
+
+.breakfastimg{
+
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  border: 2px solid brown;
+}
+
+.breakfastimg img{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  
+}
+
+.breakfastdiv{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 5px;
+}
+
+
+
+
+
+
 
 /* form section */
 .headingcontact {
@@ -469,7 +522,7 @@ footer {
   .logo,
   .clientheading,
   .headingservice,
-  .headingcontact {
+  .headingcontact,.headingmenu {
     font-size: 20px;
   }
 
@@ -566,6 +619,12 @@ footer {
     width: 60vw;
     padding: 20px 20px;
   }
+
+  .menurow{
+    display: flex;
+    flex-direction: column;
+  }
+  
 
 
   /* iframe{ 
