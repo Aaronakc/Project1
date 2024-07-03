@@ -12,7 +12,6 @@
 
 body {
   width: 100%;
-  /* overflow: hidden; */
 }
 
 /* navigation bar */
@@ -26,9 +25,6 @@ nav {
   top: 0;
   left: 0;
   z-index: 2;
-  /* position: fixed;
-  top: 0; */
-  /* opacity: 0.3; */
 }
 
 nav {
@@ -43,7 +39,7 @@ nav {
   padding: 0 20px 0 20px;
   font-size: 30px;
   font-family: Arial, Helvetica, sans-serif;
-  font-family: bold;
+  font-weight: bold;
 }
 
 /* list styling */
@@ -55,7 +51,7 @@ nav ul {
   justify-content: space-evenly;
 }
 
-nav ul li a {
+nav a {
   color: white;
 }
 
@@ -74,9 +70,6 @@ nav ul li:hover {
   background-image: url("https://img.goodfon.com/original/1024x768/2/86/fastfud-burger-gamburger-pepsi-kola-kartofel-fri.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-
-  /* background-position: bottom; */
-  /* object-fit: cover; */
   height: 150vh;
   width: 100%;
   position: relative;
@@ -124,8 +117,6 @@ nav ul li:hover {
 .pizzadiv {
   width: 370px;
   height: 370px;
-  /* width: 50%;
-  height: 200px; */
   position: absolute;
   top: 60px;
   left: 50%;
@@ -135,7 +126,7 @@ nav ul li:hover {
 .pizza {
   width: 100%;
   height: 100%;
-  border-radius: 60%;
+  border-radius: 50%;
   opacity: 0.9;
   animation-name: rotat;
   animation-duration: 30s;
@@ -274,12 +265,15 @@ nav ul li:hover {
 
 /* menu section */
 .menu {
+  width: 100%;
   padding: 25px 0 25px 0;
   padding: 0 100px 0 100px;
 }
 
 .menurow {
+  width: 100%;
   display: flex;
+  justify-content: space-evenly;
 }
 
 .menucolumn {
@@ -287,7 +281,7 @@ nav ul li:hover {
   border: 1px solid black;
   margin: 10px;
   padding: 10px;
-  flex: 1;
+  flex: 0;
 }
 
 .menucolumn h2 {
@@ -413,7 +407,6 @@ nav ul li:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* width: 80vw; */
   width: 40vw;
   transition: 0.5s;
   border: 5px solid black;
@@ -428,7 +421,6 @@ nav ul li:hover {
 .form-div input,
 .form-div textarea {
   width: 100%;
-  /* padding: 0.5rem; */
   padding: 0.1rem;
   border-radius: 9px soild black;
 }
@@ -486,8 +478,6 @@ footer {
     position: absolute;
     top: 20%;
     right: 50%;
-
-    /* display: inline-block; */
   }
 
   nav {
@@ -517,7 +507,6 @@ footer {
     transform: translateX(-50%);
     font-size: 10px;
     border-radius: 10px;
-    /* padding-right: 5%;  */
   }
 
   .logo,
@@ -534,8 +523,6 @@ footer {
 
   .servicediv {
     flex-direction: column;
-    /* justify-content: space-between; */
-
   }
 
   .homedelivery {
@@ -555,10 +542,8 @@ footer {
   }
 
   .home {
-    /* background-size: cover; */
     height: 100vh;
     width: 99.22%;
-    /* background-repeat: repeat; */
     background-position: center;
   }
 
@@ -579,7 +564,6 @@ footer {
     width: 100px;
     height: auto;
     position: absolute;
-    /* bottom: 40%; */
     top: 13.5%;
     left: 80%;
   }
@@ -600,9 +584,7 @@ footer {
 
   .form-div input,
   .form-div textarea {
-    /* width: 100%; */
     width: 100%;
-    /* padding: 0.5rem; */
     padding: 0 50px;
     border-radius: 9px soild black;
   }
@@ -617,7 +599,6 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* width: 80vw; */
     width: 60vw;
     padding: 20px 20px;
   }
@@ -626,20 +607,4 @@ footer {
     display: flex;
     flex-direction: column;
   }
-
-
-
-  /* iframe{ 
-    width:50%;
-    height:100px;
-    padding: 5px 5px;
-  }
-  .divmap h1{
-    font-size: 16px;
-    font-family: bold;
-    text-align: center;
-  }    */
-
-
-
 }
